@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45CCF436-67DE-4763-893B-67EE85FDEC6E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mentoring.Messaging.Service</RootNamespace>
-    <AssemblyName>Mentoring.Messaging.Service</AssemblyName>
+    <RootNamespace>Mentoring.Infrastructure</RootNamespace>
+    <AssemblyName>Mentoring.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -34,10 +31,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,29 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IMessagingIntegrationService.cs" />
-    <Compile Include="MessagingIntegrationService.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="SerializerExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mentoring.Configuration\Mentoring.Configuration.csproj">
-      <Project>{13475948-b03f-4fd7-ac95-4a4aa0a64a0e}</Project>
-      <Name>Mentoring.Configuration</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mentoring.Logging\Mentoring.Logging.csproj">
-      <Project>{14e4d2f7-e025-4355-89dd-1fe2f1b0b92f}</Project>
-      <Name>Mentoring.Logging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Mentoring.Messaging\Mentoring.Messaging.csproj">
-      <Project>{bc465466-928b-42c6-88b5-997f5eb5774c}</Project>
-      <Name>Mentoring.Messaging</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.App", "Mentoring.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Messaging.Service", "Mentoring.Messaging.Service\Mentoring.Messaging.Service.csproj", "{45CCF436-67DE-4763-893B-67EE85FDEC6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Infrastructure", "Mentoring.Infrastructure\Mentoring.Infrastructure.csproj", "{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Models", "Mentoring.Models\Mentoring.Models.csproj", "{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{45CCF436-67DE-4763-893B-67EE85FDEC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45CCF436-67DE-4763-893B-67EE85FDEC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45CCF436-67DE-4763-893B-67EE85FDEC6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2523A1FA-C2F9-4869-AD47-CD08A50BDB40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
