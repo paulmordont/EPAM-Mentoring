@@ -5,7 +5,8 @@
         private static void Main(string[] args)
         {
             //MessagingApp.Run();
-            SerializationApp.Run();
+            //SerializationApp.Run();
+            BookCheck.Run();
         }
     }
 }

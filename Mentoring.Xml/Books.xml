@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<books xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:noNamespaceSchemaLocation=".\BooksSchema.xsd">
+  <book>
+    <id>1</id>
+    <isbn>9781451678192</isbn>
+    <name>The Martian Chronicles</name>
+    <author>Ray Bradbury</author>
+    <genre>Science fiction</genre>
+    <publish_date>2012-04-17</publish_date>
+    <registration_date>2012-04-17</registration_date>
+  </book>
+  <book>
+    <id>2</id>
+    <isbn>9780060512804</isbn>
+    <name>Cryptonomicon</name>
+    <author>Neal Stephenson</author>
+    <genre>Novel</genre>
+    <publish_date>2002-11-05</publish_date>
+    <registration_date>2002-11-05</registration_date>
+  </book>
+  <book>
+    <id>3</id>
+    <isbn>9780441569595</isbn>
+    <name>Neuromancer</name>
+    <author>William Gibson</author>
+    <genre>Science fiction</genre>
+    <publish_date>1984-07-01</publish_date>
+    <registration_date>1984-07-01</registration_date>
+  </book>
+  <book>
+    <id>4</id>
+    <isbn>9780748605767</isbn>
+    <name>The Pirate </name>
+    <author>Sir Walter Scott</author>
+    <genre>History</genre>
+    <publish_date>2001-04-15</publish_date>
+    <registration_date>2001-04-15</registration_date>
+  </book>
+</books>

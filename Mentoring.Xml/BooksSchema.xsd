@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BooksSchema"
+    elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:simpleType name="Genre">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Science fiction"/>
+      <xs:enumeration value="History"/>
+      <xs:enumeration value="Science"/>
+      <xs:enumeration value="Comics"/>
+      <xs:enumeration value="Biographies"/>
+      <xs:enumeration value="Fantasy"/>
+      <xs:enumeration value="Children's"/>
+      <xs:enumeration value="Drama"/>
+      <xs:enumeration value="Romance"/>
+      <xs:enumeration value="Action and Adventure"/>
+      <xs:enumeration value="Satire"/>
+      <xs:enumeration value="Poetry"/>
+      <xs:enumeration value="Horror"/>
+      <xs:enumeration value="Novel"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ISBN">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((978[\--– ])?[0-9][0-9\--– ]{10}[\--– ][0-9xX])|((978)?[0-9]{9}[0-9Xx])"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="Book">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="isbn" type="ISBN" minOccurs="0"/>
+      <xs:element type="xs:string" name="name"/>
+      <xs:element type="xs:string" name="author"/>
+      <xs:element name="genre" type="Genre" />
+      <xs:element type="xs:date" name="publish_date" />
+      <xs:element type="xs:date" name="registration_date"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Books">
+    <xs:sequence>
+      <xs:element name="book" type="Book" minOccurs="0" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="books" type="Books">
+    <xs:unique name="uniqueId">
+      <xs:selector xpath="book"></xs:selector>
+      <xs:field xpath="id"></xs:field>
+    </xs:unique>
+  </xs:element>
+  
+</xs:schema>
+
+

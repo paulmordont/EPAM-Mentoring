@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Models", "Mentoring.Models\Mentoring.Models.csproj", "{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentoring.Xml", "Mentoring.Xml\Mentoring.Xml.csproj", "{7528EAFE-634C-4220-AFF5-907B679E6E63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA7BC5B5-EAFC-40B2-881A-8B5A005B4583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7528EAFE-634C-4220-AFF5-907B679E6E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7528EAFE-634C-4220-AFF5-907B679E6E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7528EAFE-634C-4220-AFF5-907B679E6E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7528EAFE-634C-4220-AFF5-907B679E6E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
