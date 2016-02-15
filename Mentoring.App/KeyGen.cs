@@ -19,7 +19,7 @@ namespace Mentoring.App
             var keyArray = macBytes.Select((b, i) => (int)(b ^ dateBytes[i])).Cast<int>().Select(
                 (k) =>
                     {
-                        if (k <= 990)
+                        if (k <= 999)
                         {
                             return k * 10;
                         }
