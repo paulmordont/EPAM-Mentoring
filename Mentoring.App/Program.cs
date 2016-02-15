@@ -6,7 +6,8 @@
         {
             //MessagingApp.Run();
             //SerializationApp.Run();
-            BookCheck.Run();
+            //BookCheck.Run();
+            KeyGen.Run();
         }
     }
 }
